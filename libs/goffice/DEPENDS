@@ -12,14 +12,17 @@ optional_depends libspectre "" "" "support embedded EPS"
 optional_depends lasem \
                  "--with-lasem" \
                  "--without-lasem" \
-                 "for SVG/MathML rendering"
+                 "for SVG/MathML rendering" \
+                 "n"
 
 optional_depends gtk-doc \
                  "--enable-gtk-doc" \
                  "--disable-gtk-doc" \
-                 "for building documentation"
+                 "for building documentation" \
+                 "n"
 
 optional_depends gobject-introspection \
                  "--enable-introspection" \
                  "--disable-introspection" \
-                 "for object introspection"
+                 "for object introspection" \
+                 "y"

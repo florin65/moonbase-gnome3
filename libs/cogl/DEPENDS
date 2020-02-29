@@ -9,14 +9,17 @@ depends pango
 optional_depends wayland \
                  "--enable-wayland-egl-platform=yes --enable-wayland-egl-server=yes" \
                  "--enable-wayland-egl-platform=no  --enable-wayland-egl-server=no" \
-                 "for Wayland support"
+                 "for Wayland support" \
+                 "y"
 
 optional_depends gtk-doc \
                  "--enable-gtk-doc" \
                  "--disable-gtk-doc" \
-                 "for building documentation"
+                 "for building documentation" \
+                 "n"
 
 optional_depends gobject-introspection \
                  "--enable-introspection" \
                  "--disable-introspection" \
-                 "for object introspection"
+                 "for object introspection" \
+                 "y"
