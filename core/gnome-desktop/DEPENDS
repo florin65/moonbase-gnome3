@@ -5,6 +5,7 @@ depends libxkbfile
 depends xkeyboard-config
 depends libseccomp
 depends itstool
+depends libxml2
 depends meson
 
 optional_depends gtk-doc \
