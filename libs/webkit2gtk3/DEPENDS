@@ -4,6 +4,7 @@ depends which
 depends %JPEG
 depends libpng
 depends libwebp
+depends libmanette
 depends mesa-lib
 depends icu4c
 depends enchant
@@ -19,17 +20,12 @@ depends libsoup
 depends libsecret
 depends bubblewrap
 depends xdg-dbus-proxy
-depends zlib
 depends libseccomp
+depends zlib
 
 if [ "`get_module_config WPEBACKEND`" = "y" ]; then
-depends wpebackend-fdo
+   depends wpebackend-fdo
 fi
-
-optional_depends hyphen \
-                 "-DUSE_LIBHYPHEN=ON" \
-                 "-DUSE_LIBHYPHEN=OFF" \
-                 "for hyphenation and justification support"
 
 optional_depends libnotify \
                  "-DUSE_LIBNOTIFY=ON" \
@@ -41,6 +37,11 @@ optional_depends geoclue2 \
                  "-DENABLE_GEOLOCATION=OFF" \
                  "for geolocation support"
 
+optional_depends hyphen \
+                 "-DUSE_LIBHYPHEN=ON" \
+                 "-DUSE_LIBHYPHEN=OFF" \
+                 "for hyphenation and justification support"
+
 optional_depends wayland-protocols \
                  "-DENABLE_WAYLAND_TARGET=ON" \
                  "-DENABLE_WAYLAND_TARGET=OFF" \
@@ -49,7 +50,7 @@ optional_depends wayland-protocols \
 
 optional_depends gtk-doc \
                  "-DENABLE_GTKDOC=ON" \
-                 "-DENABLE_GTKDOK=OFF" \
+                 "-DENABLE_GTKDOC=OFF" \
                  "for building documentation" \
                  "n"
 
@@ -58,4 +59,3 @@ optional_depends gobject-introspection \
                  "-DENABLE_INTROSPECTION=OFF" \
                  "for object introspection" \
                  "y"
-

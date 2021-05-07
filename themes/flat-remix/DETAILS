@@ -1,0 +1,15 @@
+          MODULE=flat-remix
+         VERSION=20210322
+          SOURCE=$MODULE-$VERSION-gtk.tar.gz
+ SOURCE_URL_FULL=https://github.com/daniruiz/flat-remix/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:2d7ce6e33abcae01cb51002ca7633fa093ad1ecaa5d317bccf0bdad5b747d8c5
+        WEB_SITE=https://github.com/daniruiz/Flat-Remix-GTK/
+         ENTERED=20190406
+         UPDATED=20210323
+           SHORT="A pretty simple GTK window theme inspired on material design"
+ARCHIVE=off
+cat << EOF
+Flat Remix GTK theme is a pretty simple GTK window theme inspired on material
+design. It follows a modern design using "flat" colors with high contrasts and
+sharp borders.
+EOF
