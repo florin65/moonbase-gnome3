@@ -1,11 +1,11 @@
           MODULE=glib-networking
-         VERSION=2.64.3
+         VERSION=2.70.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
-      SOURCE_VFY=sha256:937a06b124052813bfc0b0b86bff42016ff01067582e1aca65bb6dbe0845a168
+      SOURCE_VFY=sha256:2a16bfc2d271ccd3266e3fb462bc8a4103c02e81bbb339aa92d6fb060592d7bc
         WEB_SITE=http://www.gnome.org
          ENTERED=20110512
-         UPDATED=20200528
+         UPDATED=20211207
            SHORT="Network extensions for glib"
 
 cat << EOF
