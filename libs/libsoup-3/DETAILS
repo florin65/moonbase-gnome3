@@ -1,12 +1,12 @@
-          MODULE=libsoup
-         VERSION=2.74.2
-          SOURCE=$MODULE-$VERSION.tar.xz
-      SOURCE_URL=$GNOME_URL/sources/$MODULE/`echo $VERSION | cut -d. -f1-2`
-      SOURCE_VFY=sha256:f0a427656e5fe19e1df71c107e88dfa1b2e673c25c547b7823b6018b40d01159
+          MODULE=libsoup-3
+         VERSION=3.0.5
+          SOURCE=libsoup-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/libsoup/3.0/
+      SOURCE_VFY=sha256:f5d143db6830b3825edc2a1c4449d639273b0bfa017a4970871962d9bca22145
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/libsoup-$VERSION
         WEB_SITE=https://wiki.gnome.org/Projects/libsoup
-            TYPE=meson
-         ENTERED=20030413
-         UPDATED=20211205
+         ENTERED=20220325
+         UPDATED=20220325
            SHORT="A SOAP implementation in C"
 
 cat << EOF
