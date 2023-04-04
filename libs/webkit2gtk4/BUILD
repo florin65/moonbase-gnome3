@@ -1,5 +1,6 @@
 OPTS+=" -DPORT=GTK \
-        -DUSE_GTK4=OFF \
+        -DUSE_GTK4=ON \
+        -DUSE_SOUP2=OFF \
         -DCMAKE_VERBOSE_MAKEFILE=ON \
         -DENABLE_INTROSPECTION=ON \
         -DCMAKE_BUILD_TYPE=Release \
@@ -7,11 +8,8 @@ OPTS+=" -DPORT=GTK \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib  \
         -DCMAKE_INSTALL_LIBEXECDIR=lib \
+        -DENABLE_MINIBROWSER=ON \
         -DENABLE_DOCUMENTATION=OFF"
-
-if [[ $MINIBROWSER == "y" ]]; then
-  OPTS+=" -DENABLE_MINIBROWSER=ON"
-fi &&
 
 cmake -B $MODULE-$VERSION -G Ninja $OPTS &&
 cmake --build $MODULE-$VERSION &&
