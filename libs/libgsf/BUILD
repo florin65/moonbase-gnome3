@@ -1,5 +1,5 @@
-sedit '22i #include <libxml/parser.h>' gsf/gsf-libxml.c &&
+export PYTHONDONTWRITEBYTECODE=1 &&
 
-OPTS+=" --disable-static --without-bz2"
+OPTS+=" --disable-static"
 
 default_build
