@@ -1,5 +1,7 @@
-sedit '22i #include <libxml/parser.h>' gsf/gsf-libxml.c &&
+./autogen.sh &&
 
-OPTS+=" --disable-static --without-bz2"
+export PYTHONDONTWRITEBYTECODE=1 &&
+
+OPTS+=" --disable-static --disable-gtk-doc-html"
 
 default_build

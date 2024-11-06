@@ -6,8 +6,11 @@ depends libxkbcommon
 depends libepoxy
 depends graphene
 depends sassc
+depends libcloudproviders
+depends json-glib
 depends Vulkan-Loader
 depends gobject-introspection
+depends gst-plugins-bad
 
 optional_depends cups \
                  "-Dprint-cups=enabled" \
@@ -23,20 +26,11 @@ optional_depends %X \
                  "-Dx11-backend=false" \
                  "for the X11 backend (recommended)"
 
-optional_depends json-glib \
-                 "-Dcloudproviders=enabled" \
-                 "-Dcloudproviders=disabled" \
-                 "required by cloudprint"
-
 optional_depends wayland-protocols \
                  "-Dwayland-backend=true" \
                  "-Dwayland-backend=false" \
                  "for the waylany backend" \
                  "y"
-
-if [ "`get_module_config GSTREAMER`" = "y" ]; then
-depends gstreamer
-fi
 
 if [ "`get_module_config FFMPEG`" = "y" ]; then
 depends ffmpeg
