@@ -1,11 +1,11 @@
           MODULE=gdk-pixbuf
-         VERSION=2.43.3
+         VERSION=2.44.0
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
-      SOURCE_VFY=sha256:ed4c5d16346a5b4e95326731de9700fad70d03bbd2f9324732e6c94f42d869d7
+      SOURCE_VFY=sha256:31d65c2db14d321b9d862a323fc63002179cf3cc0b10d04db6ed55ffaed00db3
         WEB_SITE=http://www.gtk.org/
          ENTERED=20091105
-         UPDATED=20250812
+         UPDATED=20250909
            SHORT="An image loading library used with GNOME"
 
 cat << EOF
