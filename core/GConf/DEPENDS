@@ -7,22 +7,17 @@ optional_depends gtk+-3 \
                  "--with-gtk=3.0" "" \
                  "for GTK+-3 Support"
 
-optional_depends gtk+-2 \
-                 "--with-gtk=2.0" "" \
-                 "for GTK+-2 Support" \
-                 "n"
-
 optional_depends openldap \
                  "--with-openldap" \
                  "--without-openldap" \
                  "for LDAP backend support" \
                  "n"
 
-optional_depends ORBit2 \
-                 "--enable-orbit" \
-                 "--disable-orbit" \
-                 "use ORBit for IPC instead of DBus" \
-                 "n"
+#optional_depends ORBit2 \
+#                 "--enable-orbit" \
+#                 "--disable-orbit" \
+#                 "use ORBit for IPC instead of DBus" \
+#                 "n"
 
 optional_depends gtk-doc \
                  "--enable-gtk-doc" \
