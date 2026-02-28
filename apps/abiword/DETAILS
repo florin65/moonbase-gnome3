@@ -1,12 +1,12 @@
           MODULE=abiword
-         VERSION=3.0.7
+         VERSION=3.0.8
           SOURCE=AbiWord-release-$VERSION.tar.gz
       SOURCE_URL=https://gitlab.gnome.org/World/AbiWord/-/archive/release-$VERSION/
-      SOURCE_VFY=sha256:a015d82aad2cd344b8ad43a99f781561bb0e81c192fa903f2b37c0a93c14aa18
+      SOURCE_VFY=sha256:7c490e46f0a6143f84d5c7e3fed246f34486ad70cd55f162c792827607cd7e9a
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/AbiWord-release-$VERSION
         WEB_SITE=https://gitlab.gnome.org/World/AbiWord
          ENTERED=20011224
-         UPDATED=20250806
+         UPDATED=20260226
            SHORT="A full-featured, yet light and fast word processor"
 
 cat << EOF
