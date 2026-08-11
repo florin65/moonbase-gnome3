@@ -1,3 +1,5 @@
 default_pre_build
 
 OPTS+=" -Ddocs=false -Ddefault_bus=dbus-broker -Dintrospection=enabled"
+
+export PYTHONDONTWRITEBYTECODE=1
